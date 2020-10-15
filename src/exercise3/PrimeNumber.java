@@ -8,8 +8,7 @@ public class PrimeNumber {
     int b = 0;
     boolean c;  
 
-    do {
-      System.out.print("Enter your number: ");
+    do {     
       a = input.nextInt();      
       if (a % 2 == 0){
         if (a / 2 == 1) {

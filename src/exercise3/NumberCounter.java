@@ -9,8 +9,7 @@ public class NumberCounter {
     int b = 0;
     int c = 0;
     double sum = 0.0;
-    do {
-      System.out.print("Enter your number: ");
+    do {      
       a = input.nextDouble();
       if (a < 0) {
         ++c;
@@ -22,10 +21,10 @@ public class NumberCounter {
     } while (a != 0);
     double average = sum / (b + c);
 
-    System.out.println("Positive numbers: " + b);
-    System.out.println("Negative numbers " + c);
-    System.out.println("Sum: " + sum);
-    System.out.println("Average: " + average);
+    System.out.print("Positive numbers: " + b + " ");
+    System.out.print("Negative numbers " + c + " ");
+    System.out.print("Sum: " + sum + " ");
+    System.out.print("Average: " + average + " ");
   }
 }
 

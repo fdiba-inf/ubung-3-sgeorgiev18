@@ -19,15 +19,15 @@ public class Triangle {
       if (positive == true) {
       System.out.println(Area);
       if (a == b && a == c) {
-        System.out.println("equilateral");
+        System.out.println("Triagnle: equilateral");
       } else if (a == b && a != c) {
-        System.out.println("isosceles");
+        System.out.println("Triagnle: isosceles");
       } else if (a == c && a != b) {
-        System.out.println("isosceles");
+        System.out.println("Triagnle: isosceles");
       } else if (b == c && b != a) {
-        System.out.println("isosceles");
+        System.out.println("Triagnle: isosceles");
       } else {
-        System.out.println("scalene");
+        System.out.println("Triagnle: scalene");
       }
     }
 
