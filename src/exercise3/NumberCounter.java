@@ -21,10 +21,10 @@ public class NumberCounter {
     } while (a != 0);
     double average = sum / (b + c);
 
-    System.out.print("Positive numbers: " + b + " ");
-    System.out.print("Negative numbers " + c + " ");
-    System.out.print("Sum: " + sum + " ");
-    System.out.print("Average: " + average + " ");
+    System.out.print("Positive numbers: " + b);
+    System.out.print("Negative numbers " + c);
+    System.out.print("Sum: " + sum +);
+    System.out.print("Average: " + average +);
   }
 }
 

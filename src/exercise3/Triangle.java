@@ -18,6 +18,8 @@ public class Triangle {
       boolean positive = (a + b > c || a + c > b || c + b > a);
       if (positive == true) {
       System.out.println(Area);
+      
+
       if (a == b && a == c) {
         System.out.println("Triagnle: equilateral");
       } else if (a == b && a != c) {
@@ -29,6 +31,8 @@ public class Triangle {
       } else {
         System.out.println("Triagnle: scalene");
       }
+    }else {
+      System.out.println("Values are not correct!");
     }
 
     } while(a > 0 && b > 0 && c > 0);
