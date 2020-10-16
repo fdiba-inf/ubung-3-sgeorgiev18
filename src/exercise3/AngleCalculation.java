@@ -4,23 +4,23 @@ import java.util.Scanner;
 public class AngleCalculation {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);    
-    char l;
-    double Grad;    
+    char l;      
+    double number;  
     do {
-      Grad = input.nextDouble();
-      l = input.next().charAt(0);
-      double Radian = (Grad * 3.14) / 180;
-      Grad = 3.14 / 180 * Radian;
+      number = input.nextDouble();
+      l = input.next().charAt(0);      
       boolean positive = (l == 'r' || l == 'd');
       if (positive) {
         if (l == 'r') {
-          System.out.println(Radian + " " + 'd');
+          double Grad = 3.14 / (180 * number);
+          System.out.println(Grad + " " + 'd');          
         } else if (l == 'd') {
-          System.out.println(Grad + " " + 'r');
+          double Radian = (number * 3.14) / 180;
+          System.out.println(Radian + " " + 'r');
         }        
       } else {
         break;
       }
-    } while(Grad > 0 && Grad < 180); 
+    } while(number > 0 && number < 180); 
   }
 }
