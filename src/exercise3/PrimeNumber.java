@@ -5,81 +5,27 @@ public class PrimeNumber {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     int a;
-    int b = 0;
-    boolean c;  
+    int b;
+    b = 2;
+    boolean c;    
+    a = input.nextInt();
 
-    do {     
-      a = input.nextInt();      
-      if (a % 2 == 0){
-        if (a / 2 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
-      } else if (a % 3 == 0) {
-        if (a / 3 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
+    while (a > 2) {
 
-      } else if (a % 5 == 0) {
-        if (a / 5 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
+      if (a % b == 0 && a != b) {
         c = true;
         System.out.println("Prime number: " + c);
-        }
-      } else if (a % 7 == 0) {
-        if (a / 7 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
-      } else if (a % 11 == 0) {
-        if (a / 11 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else{ 
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
-      } else if (a % 13 == 0) {
-        if (a / 13 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
-      } else if (a % 17 == 0) {
-        if (a / 17 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
-      } else if (a % 19 == 0) {
-        if (a / 19 == 1) {
-          c = false;
-          System.out.println("Prime number: " + c);
-        } else {
-        c = true;
-        System.out.println("Prime number: " + c);
-        }
-      } else {
+        break;        
+      } else if (a % b != 0) {
+        ++b;
+      }  else {
         c = false;
         System.out.println("Prime number: " + c);
+        break;
       }
-  } while (a > 2);
-  System.out.print("Invalid number");
- }
+
+
+    }
+
+  }
 }
