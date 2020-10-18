@@ -8,28 +8,33 @@ public class Triangle {
     double b;
     double c;
 
-    do {
-    a = input.nextDouble();
-    b = input.nextDouble();
-    c = input.nextDouble();
 
+    do {
+      a = input.nextDouble();
+      b = input.nextDouble();
+      c = input.nextDouble();
+
+    double E;
+    E = (a + b + c);
     double Area;
-    Area = (a + b + c);
+    double D;
+    D = E * (E - a) * (E - b) * (E - c);
+    Area = Math.sqrt(D);
       boolean positive = (a + b > c || a + c > b || c + b > a);
       if (positive == true) {
       System.out.println(Area);
       
 
       if (a == b && a == c) {
-        System.out.println("Triagnle: equilateral");
+        System.out.println("Triangle: equilateral");
       } else if (a == b && a != c) {
-        System.out.println("Triagnle: isosceles");
+        System.out.println("Triangle: isosceles");
       } else if (a == c && a != b) {
-        System.out.println("Triagnle: isosceles");
+        System.out.println("Triangle: isosceles");
       } else if (b == c && b != a) {
-        System.out.println("Triagnle: isosceles");
+        System.out.println("Triangle: isosceles");
       } else {
-        System.out.println("Triagnle: scalene");
+        System.out.println("Triangle: scalene");
       }
     }else {
       System.out.println("Values are not correct!");
