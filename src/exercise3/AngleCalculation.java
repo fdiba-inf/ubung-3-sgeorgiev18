@@ -10,12 +10,12 @@ public class AngleCalculation {
       number = input.nextDouble();
       l = input.next().charAt(0);      
       boolean positive = (l == 'r' || l == 'd');
+      double Radiant = (number * Math.PI) / 180;
+      double Grad = (number * 180) / Math.PI;
       if (positive) {
-        if (l == 'r') {
-          double Grad = number;
+        if (l == 'r') {          
           System.out.println("Angle: " + Grad + " " + 'd');          
-        } else if (l == 'd') {
-          double Radiant = (number * Math.PI) / 180;
+        } else if (l == 'd') {          
           System.out.println("Angle: " + Radiant + " " + 'r');
         }        
       } else {
