@@ -13,13 +13,13 @@ public class PrimeNumber {
     while (a > 2) {
 
       if (a % b == 0 && a != b) {
-        c = true;
+        c = false;
         System.out.println("Prime number: " + c);
         break;        
       } else if (a % b != 0) {
         ++b;
       }  else {
-        c = false;
+        c = true;
         System.out.println("Prime number: " + c);
         break;
       }
