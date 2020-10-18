@@ -23,8 +23,8 @@ public class NumberCounter {
 
     System.out.print("Positive numbers: " + b);
     System.out.print("Negative numbers " + c);
-    System.out.print("Sum: " + sum +);
-    System.out.print("Average: " + average +);
+    System.out.print("Sum: " + sum);
+    System.out.print("Average: " + average);
   }
 }
 
