@@ -7,12 +7,12 @@ public class NumberSearch {
     for(int a = 100; a < 1000; ++a) {
       if (a % 5 == 0 && a % 6 == 0) {
         if (s < 9) {      
-       System.out.print(a + ", ");
+       System.out.print(a + " ");
        ++s;
 
         } else {
           s = 0;
-          System.out.println(a + ", ");
+          System.out.println(a + " ");
         }              
      }
     }
